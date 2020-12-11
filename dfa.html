@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Teori Bahasa Dan Automata</title>
+	<!-- CSS only -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+	<!-- JS, Popper.js, and jQuery -->
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</head>
+<body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+
+
+	<div class="container">
+		 <header class="site-navbar js-sticky-header site-navbar-target" role="banner">
+		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+	  <a class="navbar-brand" >Reza</a>
+	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+	    <span class="navbar-toggler-icon"></span>
+	  </button>
+
+	  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+	     <ul class="navbar-nav mr-auto">
+	      <li class="nav-item active">
+	        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link" href="index.html">TBO</a>
+	      </li>
+        <li class="nav-item">
+          <a class="nav-link" href="bigo.html">BIG O</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="dfa.html">DFA</a>
+        </li>
+	    <li class="nav-item">
+          <a class="nav-link" href="regex.html">REGEX</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="cfg.html">CFG</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="chomsky.html">Chomsky</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="turing.html">Mesin Turing</a>
+        </li>
+   	      <li class="nav-item">
+	        <a class="nav-link" href="about.html">About</a>
+	      </li>
+	    </ul>
+	    <form class="form-inline my-2 my-lg-0">
+	      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+	      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+	    </form>
+	  </div>
+	</nav>
+</header>
+	<div class="jumbotron">
+	 	<h1 class="row align-items-center justify-content-center text-center " data-aos="fade-up" data-aos-delay="">TEORI BAHASA DAN OTOMATA</h1> 
+	</div>
+<div class="col-lg-6 mt-lg-0 box-material" data-aos="fade-left" data-aos-delay="">
+                  <h2 class="mb-3 text-primary">NFA to DFA Conversion</h2>
+                  <p><span class="text-primary">Prosedur</span> prosedur merubah NFA (Non-Deterministic Finite Automata) menjadi DFA (Deterministic Finite Automata) : 
+                  	<ul type="disc">
+                  		<li>Buat semua state yang merupakan subset dari state semula. Jumlah state menjadi 2Q.</li>
+                  		<li>Telusuri transisi state-state yang baru terbentuk, dari diagram transisi.</li>
+                  		<li>Tentukan state awal : {q0}.</li>
+                  		<li>Tentukan state akhir adalah state yang elemennya mengandung state akhir.</li>
+                  		<li>Reduksi state yang tak tercapai oleh state awal.</li>
+                  	</ul>
+                  </p>
+    </div>
+
+<div class="col-lg-6 mt-lg-0 box-material" data-aos="fade-left" data-aos-delay="">
+                  <h2 class="mb-3 text-primary">Contoh</h2>
+                  <p><span class="text-primary">Berikut </span> table transisi dan diagram transisi untuk NFA :
+                  	<img src="nfa-ke-dfa.jpg"> <br>
+                  	Dapat dilihat dari gambar di atas ada suatu state yang diberi inputan menuju ke beberapa state, yaitu S0 yang diberi inputan b bisa menuju ke S0 dan S1
+                  	<ul type="disc">      		
+					    <li>Lalu dikonversi menjadi DFA, dengan cara membuat state baru berupa gabungan dari S0 dan S1. </li>
+					    <li>Lalu untuk state {S0,S1} jika diberi inputan a maka hasilnya adalah gabungan dari hasil S0 dan S1 yang diberi inputan a yaitu {S0,S1}</li>
+					    <li>Lalu untuk state {S0,S1} jika diberi inputan b maka hasilnya adalah gabungan dari hasil S0 dan S1 yang diberi inputan b yaitu {S0,S1}</li>
+					    <li>Berikuta table transisi dan diagram transisi untuk DFA nya : </li>
+                  	</ul>
+                  	<img src="result-dfa.jpg">
+                  </p>
+</div>
+
+</body>
+</html>

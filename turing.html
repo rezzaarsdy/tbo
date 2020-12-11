@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Teori Bahasa Dan Automata</title>
+	<!-- CSS only -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+	<!-- JS, Popper.js, and jQuery -->
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</head>
+<body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+
+
+	<div class="container">
+		 <header class="site-navbar js-sticky-header site-navbar-target" role="banner">
+		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+	  <a class="navbar-brand" >Reza</a>
+	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+	    <span class="navbar-toggler-icon"></span>
+	  </button>
+
+	  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+	    <ul class="navbar-nav mr-auto">
+	      <li class="nav-item active">
+	        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link" href="index.html">TBO</a>
+	      </li>
+        <li class="nav-item">
+          <a class="nav-link" href="bigo.html">BIG O</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="dfa.html">DFA</a>
+        </li>
+	    <li class="nav-item">
+          <a class="nav-link" href="regex.html">REGEX</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="cfg.html">CFG</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="chomsky.html">Chomsky</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="turing.html">Mesin Turing</a>
+        </li>
+   	      <li class="nav-item">
+	        <a class="nav-link" href="about.html">About</a>
+	      </li>
+	    </ul>
+	    <form class="form-inline my-2 my-lg-0">
+	      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+	      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+	    </form>
+	  </div>
+	</nav>
+</header>
+	<div class="jumbotron">
+	 	<h1 class="row align-items-center justify-content-center text-center " data-aos="fade-up" data-aos-delay="">TEORI BAHASA DAN OTOMATA</h1> 
+	</div>
+	<div class="d-flex">
+<div class="col-lg-6 mt-lg-0 box-material" data-aos="fade-left" data-aos-delay="">
+                  <h2 class="mb-3 text-primary">Mesin Turing</h2>
+                  <p><span class="text-primary">Mesin Turing</span>, Terkenal dengan ungkapan "Apapun yang bisa dilakukan oleh mesin ini, maka komputer juga bisa melakukannya". Mesin Turing menggunakan notasi seperti ID-ID pada PDA untuk menyatakan konfigurasi dari komputasinya. Stack pada PDA memiliki keterbatasan akses.  Elemen yang dapat diakses hanya elemen yang ada pada top stack. Pada Mesin Turing, memori akan berupa suatu tape yang pada dasarnya merupakan array dari sel-sel penyimpanan. Mesin terdiri dari sebuah finite control, yang dapat berada dalam sebuah himpunan berhingga dari state.  Terdapat sebuah tape yang dibagi ke dalam kotak-kotak atau sel-sel.  Setiap sel dapat menampung sebuah dari sejumlah berhingga dari simbol.  Pada awalnya, input yang merupakan string dari simbol dengan panjang berhingga dipilih dari input alphabet, ditempatkan pada tape. Sel-sel tape yang lain, perluasan secara infinite ke kiri dan ke kanan, pada awalnya menampung simbol khusus yang dinamakan blank. Blank bukan sebuah input symbol, dan mungkin terdapat simbol tape yang lain disamping input symbol dan blank.  Terdapat sebuah tape head yang selalu ditempatkan pada salah satu dari sel-sel tape.  Mesin turing dikatakan men-scan sel tersebut. Pada awalnya, tape head berada pada sel paling kiri yang menampung input. Sebuah pergerakan mesin Turing adalah sebuah fungsi dari state dari finite control dan tape symbol yang di-scan. <br>
+                    Memliki Spesifikasi antara lain :
+                    <ul type="disc">
+                      <li>Mesin Turing memiliki pita berupa array sebagai memori yang dapat menyimpan sebuah simbol tunggal</li>
+                      <li>Mesin Turing juga memiliki Head fungsinya Sebagai Penunjuk Posisi yang diakses oleh Pita</li>
+                      <li>Head pada Mesin Turing juga dapat bergerak ke-kanan dan ke-kiri pada pita  sesuai fungsi transisi yang ditetapkan untuk membaca inputan</li>
+                      <li>Head juga Mampu melakukan tugas untuk menghapus dan mengubah isi dari Pita</li>
+                    </ul>
+
+
+                  </p>
+                  <p><span class="text-primary">Prinsip kerja mesin Turing </span> antara lain sebagai berikut :
+                  <ul type="disc">
+                    <li>Lihat pada State Semula dan simbol yang ditunjuk Head</li>
+                    <li>Berdasarkan fungsi transisinya, tentukan :</li>
+                      <ol>
+                        <li>State Berikutnya</li>
+                        <li>Lakukan penulisan ke pita</li>
+                        <li>Gerakan head ke kanan dan ke kiri</li>
+                      </ol>
+                      <li>Bila pasanan dari state dan simbol yang ditunjuk head tidak ada lagi fungsi transisinya,  berarti mesin turing berhenti.</li>
+                      <li>Bila mesin turing berhenti pada state final (F), brarti input diterima. Sebaliknya jika mesin turing tidak berhenti pada state akhir/final(F), maka berarti inputan tersebut ditolak</li>
+                    
+                  </ul>
+				</p>
+</div>
+
+<div class="col-lg-6 mt-lg-0 box-material" data-aos="fade-left" data-aos-delay="">
+	<br>
+	<br>
+                  <p><span class="text-primary">Contoh </span>. Mesin turing dapat dibangun untuk melakukan komputasi sederhana seperti :
+                  	<br> <br>
+                    Tentukan ada berapa angka 1 dalam sebuah string berbentuk 0111...110 (rangkaian angka 1 yang didahului dengan 0 dan diakhiri juga dengan 0), apakah berjumlah genap atau berjumlah ganjil.
+                  	<br> <br>
+                    Jika angka 1 di antara dua angka 0 berjumlah genap, tulis sebuah angka 0 pada salah satu sel dari tape mesin Turing.
+                  	<br> <br>
+                    Jika angka 1 di antara dua angka 0 berjumlah ganjil, tulis sebuah angka 1 pada salah satu sel dari tape mesin Turing.  
+                  	</p>
+
+                    <p> Untuk menyelesaikan masalah komputasi ini, kita buat tiga buah State bagi mesin Turing ini, yaitu Start, Even, dan Odd. Di samping itu kita buat sekumpulan aturan Transisi yang digunakan oleh mesin Turing ini untuk melakukan proses komputasinya. Aturan-aturan Transisi tersebut dapat dituliskan demikian:</p>
+
+                    <p>
+                      <ul type="disc">
+                        <li>Jika mesin Turing berada pada status Start, dan membaca simbol 0 pada Tape, lakukan hal berikut: Pindah status menjadi status Even, Ganti simbol 0 pada Tape dengan Blank (atau Hapus simbol 0 pada Tape), dan Bergerak ke kanan satu sel.</li>
+                        <li>Jika mesin Turing berada pada status Even, dan membaca simbol 1 pada Tape, lakukan hal berikut: Pindah status menjadi status Odd, Ganti simbol 1 pada Tape dengan Blank, dan Bergerak ke kanan satu sel.</li>
+                        <li>Jika mesin Turing berada pada status Odd, dan membaca simbol 1 pada Tape, lakukan hal berikut: Pindah status menjadi Even, Ganti simbol 1 pada Tape dengan Blank, dan Bergerak ke kanan satu sel.</li>
+                        <li>Jika mesin Turing berada pada status Even, dan membaca simbol 0 pada Tape, lakukan hal berikut: Pindah status menjadi Halt, Ganti simbol 0 pada Tape dengan 0, dan tetap pada sel tersebut (tidak perlu berpindah ke kiri maupun ke kanan).</li>
+                        <li>Jika mesin Turing berada pada status Odd, dan membaca simbol 0 pada Tape, lakukan hal berikut: Pindah status menjadi Halt, Ganti simbol 0 pada Tape dengan 1, dan tetap pada sel tersebut.</li>
+                      </ul>
+                    </p>
+                  </div>
+
+</div>
+
+</body>
+</html>
